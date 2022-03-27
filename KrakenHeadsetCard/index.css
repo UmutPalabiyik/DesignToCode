@@ -20,6 +20,21 @@ body {
           align-items: center;
 }
 
+.card {
+  background-color: #ffff;
+  border-radius: 1rem;
+  padding: 5rem;
+}
+
+.card__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+}
+
 .card__container {
   width: 700px;
 }
