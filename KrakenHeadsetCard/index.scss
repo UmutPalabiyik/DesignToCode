@@ -9,8 +9,17 @@ $html-font-size: 16px;
 *,*::after,*::before{
     margin: 0;
     padding: 0;
+    border: none;
     outline: none;
     box-sizing: border-box;
+}
+
+.cursor-poiner{
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
 }
 
 body{
@@ -33,23 +42,97 @@ body{
         column-gap: 2rem;
     }
 
-
-    &__img{
-
-    }
-
     &__container{
         width: 700px;
     }
 
+    &__details{
+        display: flex;
+        flex-direction: column;
+    }
+
     &__shipping{
+        color: #ffff;
+        background-color: #191847;
+        width: max-content;
         font-size: 14px;
         font-weight: 600;
-        background-color: #191847;
-        color: #ffff;
+        margin-bottom: rem(10px);
         padding: .25rem .5rem;
         border-radius: rem(20px);
+    }
 
+    &__product-name{
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: rem(32px);
+    }
+
+    &__price{
+        font-size: rem(18px);
+        text-decoration: line-through;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    &__discount-price{
+        font-size: rem(48px);
+        font-weight: 700;
+    }
+
+    &__discount-deadline-text{
+        color: #191847;
+        opacity: .6;
+        font-size: rem(14px);
+        margin-bottom: 2rem;
+    }
+
+    &__add-cart{
+        color: #ffff;
+        font-size: rem(18px);
+        font-weight: 500;
+        background-color: #4788E9;
+        box-shadow: 0px 7px 0px #1C57EE;
+        border-radius: .5rem;
+        padding: 1rem;
+        margin-bottom: 2rem;
+    }
+    &__stock{
+        display: flex;
+        align-items: center;
+        column-gap: .5rem;
+        margin-bottom: 2rem;
+    }
+
+    &__stock-icon{
+        width: rem(13px);
+        height: rem(13px);
+        background-color: #00D98B;
+        border-radius: 50%;
+    }
+
+    &__stock-text{
+        font-size: rem(14px);
+        font-weight: 500;
+    }
+
+    &__footer-buttons{
+        display: flex;
+        column-gap: 1rem;
+    }
+
+    &__footer-button{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: rem(10px);
+        padding: 1rem;
+        border: 2px solid #C9C9DA;
+        border-radius: .5rem;
+    }
+
+    &__footer-text{
+        font-size: rem(18px);
+        font-weight: 500;
     }
 }
 
