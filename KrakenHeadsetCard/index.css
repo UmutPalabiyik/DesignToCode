@@ -8,6 +8,7 @@
 
 body {
   min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
   background-color: #EEF2F9;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,5 +38,14 @@ body {
 
 .card__container {
   width: 700px;
+}
+
+.card__shipping {
+  font-size: 14px;
+  font-weight: 600;
+  background-color: #191847;
+  color: #ffff;
+  padding: .25rem .5rem;
+  border-radius: 1.25rem;
 }
 /*# sourceMappingURL=index.css.map */

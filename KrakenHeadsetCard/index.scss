@@ -1,3 +1,11 @@
+$html-font-size: 16px;
+@function stripUnit($value) {
+    @return $value / ($value * 0 + 1);
+}
+@function rem($pxValue) {
+    @return #{stripUnit($pxValue) / stripUnit($html-font-size)}rem;
+}
+
 *,*::after,*::before{
     margin: 0;
     padding: 0;
@@ -7,6 +15,7 @@
 
 body{
     min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
     background-color: #EEF2F9;
     display: flex;
     justify-content: center;
@@ -32,4 +41,16 @@ body{
     &__container{
         width: 700px;
     }
+
+    &__shipping{
+        font-size: 14px;
+        font-weight: 600;
+        background-color: #191847;
+        color: #ffff;
+        padding: .25rem .5rem;
+        border-radius: rem(20px);
+
+    }
 }
+
+
